@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Jewellery Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.3/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <!-- Bootstrap JS (optional, but may be required for some features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <h1 id="Heading">Online Jewellery Store</h1>
+
+    <div class="item-r1 container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 0</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/0.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="0" onclick="purchaseNow(0)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 1</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/1.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="1" onclick="purchaseNow(1)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 2</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/2.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="2" onclick="purchaseNow(2)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 3</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/3.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="3" onclick="purchaseNow(3)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item-r1 container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 4</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/4.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="4" onclick="purchaseNow(4)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 5</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/5.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="5" onclick="purchaseNow(5)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 6</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/6.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="6" onclick="purchaseNow(6)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 7</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/7.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="7" onclick="purchaseNow(7)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item-r1 container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 8</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/8.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="8" onclick="purchaseNow(8)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 9</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/9.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="9" onclick="purchaseNow(9)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 10</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/10.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="10" onclick="purchaseNow(10)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 11</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/11.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="11" onclick="purchaseNow(11)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item-r1 container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 12</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/12.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="12" onclick="purchaseNow(12)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 13</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/13.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="13" onclick="purchaseNow(13)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 14</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/14.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="14" onclick="purchaseNow(14)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3">
+                <div class="card panel-item">
+                    <!-- Card content goes here -->
+                    <div class="card-header">
+                        <h3 class="card-title">Scrappy</h3>
+                        <p class="item-id">Item ID: 15</p>
+                    </div>
+                    <div class="card-body">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-fluid img-rounded img-center custom-image" src="./image/15.jpeg" data-holder-rendered="true">
+                        <br><br>
+                        <strong>Type</strong>: <span class="item-type">Ear Rings</span><br>
+                        <strong>Price</strong>: <span class="item-price">0.01</span><br>
+                        <strong>Material</strong>: <span class="item-material">Gold</span><br><br>
+                        <button class="btn btn-primary btn-buy" type="button" data-id="15" onclick="purchaseNow(15)">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Item Details</h2>
+        <label for="detailsItemId">Item ID:</label>
+        <input type="text" id="detailsItemId" />
+        <br>
+        <button onclick="getItemDetails()" class="mt-4">Get Item Details</button>
+        <p id="itemDetails"></p>
+    </div>
+
+    <script>
+        // Replace with your actual contract address
+        const contractAddress = '0x22eC4738f83aff2f95ff6e496A30b9423574F027';
+        // Replace with your actual contract ABI
+        const contractABI = [
+        {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "itemId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "ItemAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "itemId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "buyer",
+          "type": "address"
+        }
+      ],
+      "name": "ItemPurchased",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "catalogue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "itemId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "sold",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownership",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "itemId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "addItem",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "itemId",
+          "type": "uint256"
+        }
+      ],
+      "name": "purchaseItem",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "itemId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getItemDetails",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }    // ... (your contract ABI)
+        ];
+        // Replace with your actual Infura API key
+        const AlchemyApiKey = '4JKte2tz3TR6oWD-eq-GiBuwXcfmiS0l';
+
+        let contract;  // Declare contract variable in the outer scope
+        let web3;  // Declare web3 variable in the outer scope
+
+        // Check if Web3 is injected by MetaMask
+        if (typeof window.ethereum !== 'undefined') {
+            web3 = new Web3(window.ethereum);
+
+            // Request account access using eth_requestAccounts
+            window.ethereum.request({ method: 'eth_requestAccounts' })
+                .then((accounts) => {
+                    // Set the default account
+                    web3.eth.defaultAccount = accounts[0];
+
+                    // Create a contract instance
+                    contract = new web3.eth.Contract(contractABI, contractAddress);
+
+                    window.purchaseNow = function (itemId) {
+                        const itemPrice = web3.utils.toWei(document.querySelector('.item-price').innerText, 'ether');
+                        const itemName = document.querySelector('.card-title').innerText;
+
+                        contract.methods.addItem(itemId, itemName, itemPrice).send({ from: web3.eth.defaultAccount })
+                            .then(() => {
+                                alert('Item added successfully!');
+
+                                const purchaseAmount = itemPrice;
+
+                                contract.methods.purchaseItem(itemId).send({ from: web3.eth.defaultAccount, value: purchaseAmount })
+                                    .then(() => {
+                                        alert('Item purchased successfully!');
+                                    })
+                                    .catch((error) => {
+                                        console.error(`Error purchasing item: ${error.message}`);
+                                    });
+                            })
+                            .catch((error) => {
+                                console.error('Error adding item:', error);
+                            });
+                    }
+
+                    // Function to get item details
+                    let displayedItemIds = new Set();
+
+                    window.getItemDetails = function () {
+                        const detailsItemId = document.getElementById('detailsItemId').value;
+
+                        // Check if details for the item ID are already displayed
+                        if (displayedItemIds.has(detailsItemId)) {
+                            alert('Details for this Item ID have already been displayed.');
+                            return;
+                        }
+
+                        contract.methods.getItemDetails(detailsItemId).call()
+                            .then((result) => {
+                                const itemId = result[0];
+                                const itemName = result[1];
+                                const itemPrice = result[2];
+                                const owner = contractAddress;
+                                const sold = result[4];
+
+                                const details = `
+                                    <strong>Item ID:</strong> ${itemId}<br>
+                                    <strong>Name:</strong> ${itemName}<br>
+                                    <strong>Price:</strong> ${web3.utils.fromWei(itemPrice, 'ether')} ETH<br>
+                                    <strong>Owner:</strong> ${owner}<br>
+                                    <strong>Sold:</strong> ${sold ? 'Yes' : 'No'}<br>
+                                    ------------------------------------<br>
+                                `;
+
+                                document.getElementById('itemDetails').innerHTML += details;
+
+                                // Add the displayed item ID to the set
+                                displayedItemIds.add(detailsItemId);
+                            })
+                            .catch((error) => {
+                                console.error('Error getting item details:', error);
+                            });
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error requesting accounts:', error);
+                });
+        } else {
+            alert("Please install MetaMask to use this application.");
+        }
+    </script>
+</body>
+
+</html>
