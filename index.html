@@ -329,9 +329,7 @@
     </div>
 
     <script>
-        // Replace with your actual contract address
         const contractAddress = '0x22eC4738f83aff2f95ff6e496A30b9423574F027';
-        // Replace with your actual contract ABI
         const contractABI = [
         {
       "inputs": [],
@@ -538,25 +536,18 @@
       "stateMutability": "view",
       "type": "function",
       "constant": true
-    }    // ... (your contract ABI)
+    }   
         ];
-        // Replace with your actual Infura API key
         const AlchemyApiKey = '4JKte2tz3TR6oWD-eq-GiBuwXcfmiS0l';
 
-        let contract;  // Declare contract variable in the outer scope
-        let web3;  // Declare web3 variable in the outer scope
-
-        // Check if Web3 is injected by MetaMask
+        let contract;  
+        let web3;  
         if (typeof window.ethereum !== 'undefined') {
             web3 = new Web3(window.ethereum);
-
-            // Request account access using eth_requestAccounts
             window.ethereum.request({ method: 'eth_requestAccounts' })
                 .then((accounts) => {
-                    // Set the default account
                     web3.eth.defaultAccount = accounts[0];
 
-                    // Create a contract instance
                     contract = new web3.eth.Contract(contractABI, contractAddress);
 
                     window.purchaseNow = function (itemId) {
@@ -581,14 +572,10 @@
                                 console.error('Error adding item:', error);
                             });
                     }
-
-                    // Function to get item details
                     let displayedItemIds = new Set();
 
                     window.getItemDetails = function () {
                         const detailsItemId = document.getElementById('detailsItemId').value;
-
-                        // Check if details for the item ID are already displayed
                         if (displayedItemIds.has(detailsItemId)) {
                             alert('Details for this Item ID have already been displayed.');
                             return;
@@ -613,7 +600,6 @@
 
                                 document.getElementById('itemDetails').innerHTML += details;
 
-                                // Add the displayed item ID to the set
                                 displayedItemIds.add(detailsItemId);
                             })
                             .catch((error) => {
